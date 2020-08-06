@@ -6,6 +6,7 @@ const { Navigator, Screen } = createStackNavigator();
 
 // pages
 import Landing from '../pages/Landing';
+import GiveClasses from '../pages/GiveClasses';
 
 function AppStack() {
   return (
@@ -16,6 +17,7 @@ function AppStack() {
         }}
       >
         <Screen name="Landing" component={Landing} />
+        <Screen name="GiveClasses" component={GiveClasses} />
       </Navigator>
     </NavigationContainer>
   );
