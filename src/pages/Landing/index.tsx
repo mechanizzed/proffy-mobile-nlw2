@@ -1,5 +1,4 @@
 import React from 'react';
-import { View, Text, Image, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 // images and icons
@@ -33,7 +32,7 @@ const Landing = () => {
       </Title>
 
       <ButtonsContainer>
-        <Buttons primary>
+        <Buttons primary onPress={() => navigation.navigate('Study')}>
           <StudyIcon source={StudyIconImage} />
           <ButtonsText>Estudar</ButtonsText>
         </Buttons>

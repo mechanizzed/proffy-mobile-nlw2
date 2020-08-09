@@ -8,6 +8,9 @@ const { Navigator, Screen } = createStackNavigator();
 import Landing from '../pages/Landing';
 import GiveClasses from '../pages/GiveClasses';
 
+// Stidy tabs route
+import StudyTabs from './StudyTabs';
+
 function AppStack() {
   return (
     <NavigationContainer>
@@ -18,6 +21,7 @@ function AppStack() {
       >
         <Screen name="Landing" component={Landing} />
         <Screen name="GiveClasses" component={GiveClasses} />
+        <Screen name="Study" component={StudyTabs} />
       </Navigator>
     </NavigationContainer>
   );
